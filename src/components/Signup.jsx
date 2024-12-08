@@ -14,9 +14,11 @@ export default function Signup() {
   })
 
   const [error, setError] = useState("");
+  const [state, setState] = useState("");
 
   const handleChange = ({currentTarget : input}) => {
     setData({...data, [input.name] : input.value})
+    setState('')
     console.log(data)
   }
 
