@@ -1,0 +1,94 @@
+
+.error{
+    color: #000000;
+    margin: 10px;
+
+}
+
+.container input{
+    border: 0px;
+    font-size: 12.5px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.container input::placeholder{
+    font-size: 12.5px;
+}
+
+.box_con{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center;
+    margin-top: 10vh;
+    color: #ffffff;
+}
+
+
+.bottom{
+    position: absolute;
+    bottom: 50px;
+}
+
+.bottom h5{
+    font-size: 12.5px;
+}
+
+.color_box{
+    /* background-color: #6abed9; */
+    color: #000000;
+    text-align: left;
+    height: 50vh;
+    display: block;
+    justify-content: center;
+    padding: 50px 70px 50px 40px;
+    position: relative;
+}
+
+.color_box h1{
+    font-weight: 600;
+}
+
+.color_box h1, .color_box h5, h1{
+    color: #ffffff;
+}
+
+.input{
+    width: 30vw;
+    height: 8vh;
+    border-radius: 10px;
+}
+
+.input::placeholder{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.btn{
+    /* width: 10vw; */
+    height: 7vh;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #0000ff;
+    background-color: white;
+    transition: all 0.35s ease-in;
+}
+
+
+button{
+    font-size: 12.5px;
+}
+
+
+label{
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}

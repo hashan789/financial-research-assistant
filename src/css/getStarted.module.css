@@ -1,0 +1,70 @@
+/* .box{
+    position: absolute;
+    top: 20vh;
+    width: 100vw;
+    height: 50vh;
+    background-color: white;
+    padding-top: 50px;
+    opacity: 0.5;
+} */
+
+.container, .container_1{
+    text-align: center;
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 100vw;
+    height: 5vh;
+    background-color: #0000ff;
+}
+
+.header1,.header2{
+   margin-bottom: 50px;
+   color: white;
+}
+
+.header1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header2{
+    font-size: 20px;
+}
+
+.btn{
+    outline: 0px;
+    width: 150px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #0000ff;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .logo_box{
+    width: 20vw;
+    height: 100vh;
+    background-color: #0000ff;
+} */
+
+.btn:hover{
+    color: #0000ff;
+    background-color: white;
+    transition: all 0.25s ease-in;
+}
+
+
+body{
+    background-image: url("https://img.freepik.com/free-vector/blue-green-patterned-background-vector_53876-63171.jpg?size=626&ext=jpg&ga=GA1.1.1379347833.1725516323&semt=ais_hybrid");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

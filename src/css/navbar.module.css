@@ -1,0 +1,56 @@
+.logo{
+    width: 75px;
+    image-rendering: auto;
+
+}
+
+.container, .container_1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 100vw;
+    height: 10vh;
+    /* background-color: #0000ff; */
+}
+
+.container_1{
+    margin-top: 15%;
+}
+
+.header1,.header2{
+   margin-bottom: 50px;
+}
+
+.btn_area{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    align-items: center;
+}
+
+.btn_area button{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav_btn{
+    outline: 0px;
+    border: 0px;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav_btn:hover{
+    font-size: 17.5px;
+    text-rendering: optimizeSpeed;
+    /* transition: all 0.15s; */
+}
+
