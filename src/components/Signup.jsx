@@ -14,8 +14,6 @@ export default function Signup() {
   })
 
   const [error, setError] = useState("");
-  const [response, setResponse] = useState("");
-  const [state, setState] = useState("");
 
   const handleChange = ({currentTarget : input}) => {
     setData({...data, [input.name] : input.value})
@@ -31,7 +29,6 @@ export default function Signup() {
       const url = "http://localhost:8080/api/users";
       const { data: res } = await axios.post(url , data);
       navigate("/login");
-      setResponse(res.message);
       console.log(res.message);
     }
     catch (error){
