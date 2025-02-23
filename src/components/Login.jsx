@@ -23,7 +23,7 @@ export default function Login() {
     e.preventDefault();
 
     try{
-      const url = "http://localhost:8080/api/auth";
+      const url = "https://happy-tree-08fe0090f.4.azurestaticapps.net/api/auth";
       const { data: res } = await axios.post(url , data);
       localStorage.setItem("token", res.data);
       navigate("/homepage");

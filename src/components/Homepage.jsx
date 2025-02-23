@@ -20,7 +20,7 @@ function Homepage() {
     setError('')
     try{
       console.log(newData)
-      const response = await axios.post("http://localhost:8080/api/azure_data",
+      const response = await axios.post("https://happy-tree-08fe0090f.4.azurestaticapps.net/api/azure_data",
         newData
       );
       // const data = await response.json();
