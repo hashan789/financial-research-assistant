@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import axios from '../lib/axios'
 import { Link , useNavigate } from 'react-router-dom'
 import styles from '../css/signup.module.css'
 import NavBar from './NavBar'
@@ -28,7 +28,7 @@ export default function Signup() {
     e.preventDefault();
 
     try{
-      const url = "https://hashsports-backend-bjdrg6deefc8fhcr.canadacentral-01.azurewebsites.net/api/users";
+      const url = "users";
       const { data: res } = await axios.post(url , data);
       navigate("/login");
       console.log(res.message);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import axios from '../lib/axios'
 import { Link, useNavigate } from 'react-router-dom'
 import styles from '../css/login.module.css'
 import NavBar from './NavBar'
@@ -23,7 +23,7 @@ export default function Login() {
     e.preventDefault();
 
     try{
-      const url = "https://hashsports-backend-bjdrg6deefc8fhcr.canadacentral-01.azurewebsites.net/api/auth";
+      const url = "auth";
       const { data: res } = await axios.post(url , data);
       localStorage.setItem("token", res.data);
       navigate("/homepage");

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios from '../lib/axios';
 import InputForm from './InputForm';
 import ResponseDisplay from './ResponseDisplay';
 import NavBar from './NavBar';
@@ -20,7 +20,7 @@ function Homepage() {
     setError('')
     try{
       console.log(newData)
-      const response = await axios.post("https://hashsports-backend-bjdrg6deefc8fhcr.canadacentral-01.azurewebsites.net/api/azure_data",
+      const response = await axios.post("azure_data",
         newData
       );
       // const data = await response.json();
