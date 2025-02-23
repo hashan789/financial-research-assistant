@@ -1,4 +1,7 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 module.exports = () => {
     const connectionParams = {
@@ -7,7 +10,7 @@ module.exports = () => {
 
     }
     try{
-       mongoose.connect(process.env.AZURE_COSMOS_CONNECTIONSTRING || process.env.DB);
+       mongoose.connect(process.env.MONGO_URI);
        console.log("Connected to database successfully")
     }
     catch(error){
