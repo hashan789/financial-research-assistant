@@ -28,7 +28,7 @@ export default function Signup() {
     e.preventDefault();
 
     try{
-      const url = "users";
+      const url = "users/";
       const { data: res } = await axios.post(url , data);
       navigate("/login");
       console.log(res.message);

@@ -20,7 +20,7 @@ function Homepage() {
     setError('')
     try{
       console.log(newData)
-      const response = await axios.post("azure_data",
+      const response = await axios.post("azure_data/",
         newData
       );
       // const data = await response.json();

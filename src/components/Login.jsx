@@ -23,7 +23,7 @@ export default function Login() {
     e.preventDefault();
 
     try{
-      const url = "auth";
+      const url = "auth/";
       const { data: res } = await axios.post(url , data);
       localStorage.setItem("token", res.data);
       navigate("/homepage");
