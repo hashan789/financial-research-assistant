@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const connection = require("./db");
+const welcomeRoutes = require("./routes/welcome");
 const userRoutes = require("./routes/users");
 const authRoutes = require("./routes/auth");
 const azureRoutes = require("./routes/server");
@@ -26,6 +27,7 @@ app.options('*', cors({
 }));
 
 app.use("/api/auth",authRoutes)
+app.use("/api/welcome",welcomeRoutes)
 app.use("/api/users",userRoutes)
 app.use("/api/azure_data",azureRoutes)
 
